@@ -39,6 +39,7 @@ import { isCurrentPage } from '../../utils';
 
 <style lang="scss" scoped>
 	.tarbar-container{
+		z-index: 99;
 		background-color: white;
 		position: fixed;
 		bottom:20rpx;

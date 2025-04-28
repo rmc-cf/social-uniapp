@@ -1,5 +1,5 @@
 <template>
-			<LifeTab :data="data" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
+			<LifeTab :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
 	<view class="life-container">
 		<Base>
 		</Base>
@@ -14,7 +14,7 @@
 	import LifeSquareContent from '@/components/LifeSquareContent/LifeSquareContent.vue';
 	import LifeFollowContent from '@/components/LifeFollowContent/LifeFollowContent.vue';
 	import LifeNewestContent from '@/components/LifeNewestContent/LifeNewestContent.vue';
-	const data = ref([{
+	const tabData = ref([{
 			name: '广场',
 			key: 'square', component: LifeSquareContent 
 		},
@@ -27,10 +27,10 @@
 			key: 'newest', component: LifeNewestContent 
 		}
 	])
-	const curKey = ref(data.value[0].key || 'square')
+	const curKey = ref(tabData.value[0].key || 'square')
 	// 动态计算当前组件
 	const currentComponent = computed(() => {
-		const target = data.value.find(item => item.key === curKey.value);
+		const target = tabData.value.find(item => item.key === curKey.value);
 		return target?.component || null;
 	});
 </script>
