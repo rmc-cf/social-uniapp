@@ -2,7 +2,7 @@
 	<view class="life-main">
 		<!-- avatar -->
 		<view class="user-info">
-			<image src="/static/uni.png" class="avatar" />
+			<image src="/static/uni.png" mode="widthFix" class="avatar" />
 			<view class="user-desc">
 				<view class="username">123123</view>
 				<view class="tip">我就是我</view>
@@ -15,14 +15,14 @@
 			<view class="content-media">
 				<view class="media-item">
 					
-					<image  src="/static/uni.png" mode="aspectFit"/>
+					<image  src="/static/uni.png" mode="widthFix"/>
 				</view>
 				<view class="media-item">
 					
-					<image  src="/static/uni.png" mode="aspectFit"/>
+					<image  src="/static/uni.png" mode="widthFix"/>
 				</view>
 				<view class="media-item">
-					<image  src="/static/uni.png" mode="aspectFit"/>
+					<image  src="/static/uni.png" mode="widthFix"/>
 				</view>
 			</view>
 		</view>
@@ -45,13 +45,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20rpx;
-		padding:100rpx 0  180rpx 0;
+		padding:40rpx 0 ;
 		.user-info{
 			display: flex;
 			gap: 20rpx;
 			.avatar{
 				width: 65rpx;
-				height: 65rpx;
 			}
 			.tip{
 				color:darkgray;
@@ -60,6 +59,9 @@
 		}
 		.content{
 			padding-left: 80rpx;
+			display: flex;
+			flex-direction: column;
+			gap: 20rpx;
 			.content-media{
 				display: grid;
 				grid-template-columns: repeat(3,1fr);

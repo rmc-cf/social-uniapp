@@ -1,9 +1,9 @@
 <template>
 	<view class="tarbar-container">
-		<navigator :url="item.url" class="item"  v-for="(item,index) in list" :key="index">
+		<view @click="goTo(item.url)" class="item"  v-for="(item,index) in list" :key="index">
 			<uni-icons :size="24" :type="isCurrentPage(item.url)?item.activeIcon:item.icon" size="30"></uni-icons>
 			<view class="title">{{item.title}}</view>
-		</navigator>
+		</view>
 		<view class="item">
 			<image src="/static/logo.png" class="my-icon"/>
 			<view class="title">我的</view>
@@ -35,6 +35,13 @@ import { isCurrentPage } from '../../utils';
 		
 		
 	])
+	
+	const goTo = (url)=>{
+		if(isCurrentPage(url)) return 
+		uni.navigateTo({
+			url
+		})
+	}
 </script>
 
 <style lang="scss" scoped>
