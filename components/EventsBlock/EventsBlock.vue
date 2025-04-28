@@ -31,7 +31,7 @@
 		justify-content: space-between;
 		border-radius: 20rpx;
 		padding: 14rpx;
-		min-height: 70rpx;
+		min-height: 90rpx;
 		.head {
 			.title {
 				font-weight: 800;
@@ -72,16 +72,18 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 24rpx;
-			padding: 14rpx;
+			height: 20rpx;
+			padding: 10rpx;
+			font-size: 20rpx;
 		}
 
 		.footerBg {
 			position: absolute;
 			right: 12rpx;
 			bottom: 12rpx;
-			width:65rpx;
-			height: 65rpx;
+			width:30%;
+			height: 60%;
+			object-fit: cover;
 		}
 	}
 </style>
