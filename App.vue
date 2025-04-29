@@ -29,4 +29,17 @@
 		color: #333;
 		padding: 10px;
 	}
+	.common-container {
+		padding: 100rpx 0;
+	}
+	.search{
+		width: 50rpx;
+		height: 50rpx;
+	}
+	.circle{
+		width: 18rpx;
+		height: 18rpx;
+		border-radius: 100%;
+		background-color: limegreen;
+	}
 </style>
