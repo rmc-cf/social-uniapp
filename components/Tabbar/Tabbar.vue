@@ -4,7 +4,7 @@
 			<uni-icons :size="24" :type="isCurrentPage(item.url)?item.activeIcon:item.icon" size="30"></uni-icons>
 			<view class="title">{{item.title}}</view>
 		</view>
-		<view class="item">
+		<view @click="goTo('/pages/my/my')" class="item">
 			<image src="/static/logo.png" class="my-icon"/>
 			<view class="title">我的</view>
 		</view>
@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { isCurrentPage } from '../../utils';
+import { goTo,isCurrentPage} from '../../utils';
 	const list = ref([
 		{
 			title:'遇见',
@@ -36,12 +36,7 @@ import { isCurrentPage } from '../../utils';
 		
 	])
 	
-	const goTo = (url)=>{
-		if(isCurrentPage(url)) return 
-		uni.navigateTo({
-			url
-		})
-	}
+	
 </script>
 
 <style lang="scss" scoped>
@@ -49,9 +44,9 @@ import { isCurrentPage } from '../../utils';
 		z-index: 99;
 		background-color: white;
 		position: fixed;
-		bottom:20rpx;
-		left: 20rpx;
-		right: 20rpx;
+		bottom:var(--padding-x);
+		left: var(--padding-x);
+		right: var(--padding-x);
 		border-radius: 40rpx;
 		padding: 16rpx;
 		display: flex;
