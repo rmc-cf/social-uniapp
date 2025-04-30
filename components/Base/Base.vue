@@ -18,6 +18,7 @@
 
 <style lang="scss" scoped>
 	.base{
+		padding-bottom: var(--tab-height)+var(--padding-x);
 	}
 
 </style>

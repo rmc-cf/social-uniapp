@@ -2,54 +2,43 @@
 	<view class="life-main">
 		<!-- avatar -->
 		<view class="user-info">
-			<image src="/static/uni.png" mode="aspectFit" class="avatar" />
+			<image :src="item.avatar" mode="aspectFit" class="avatar" />
 			<view class="user-desc">
-				<view class="username">123123</view>
+				<view class="username">{{item.nickname}}</view>
 				<view class="tip">我就是我</view>
 			</view>
 		</view>
 		<view class="main">
 			<view class="content">
 				<view class="content-text">
-					123123123312
+					{{item.contentText}}
 				</view>
-				<view class="content-media">
-					<view class="media-item">
-
-						<image src="/static/uni.png" mode="widthFix" />
-					</view>
-					<view class="media-item">
-
-						<image src="/static/uni.png" mode="widthFix" />
-					</view>
-					<view class="media-item">
-						<image src="/static/uni.png" mode="widthFix" />
+				<view class="content-media" v-if="item?.contentMedia?.length">
+					<view class="media-item" v-for="(media,index) in item.contentMedia" :key="index">
+							<image @click="previewImage(item.contentMedia,media.url)" :src="media.url" mode="widthFix" />
 					</view>
 				</view>
 			</view>
-			<view class="actions">
-				<view class="action-item" v-for="(item,index) in actions" :key="index">
-					<uni-icons color="gray" @click="action(item)" size="24"
-						:type="isClick&&item.activeIcon?item.activeIcon:item.icon"></uni-icons>
-					<view class="num">{{item.num}}</view>
-				</view>
-			</view>
-			<view v-if="true">
-				<CommentList :data="commentData"></CommentList>
-			</view>
+			<LifeActions :data="actions"></LifeActions>
+			<template v-if="true" >
+				<CommentList @click="goTo('/pages/life-detail/life-detail')" :data="item.comments"></CommentList>
+			</template>
 		</view>
 	</view>
 </template>
 
 <script setup>
+	
 	import {
 		ref
 	} from 'vue';
+import { goTo, previewImage } from '../../utils';
 	const isClick = ref(false)
-	const commentData = ref([{
-		nickname: '213',
-		content: '[图片]123123123'
-	}])
+	defineProps({
+		item: {
+			type: Object
+		}
+	})
 	const actions = ref([{
 		icon: 'fire',
 		num: '1',
@@ -60,15 +49,16 @@
 		icon: 'chat',
 		num: '2',
 		click: () => uni.navigateTo({
-			url: '/pages/index/index'
+			url: '/pages/life-detail/life-detail'
 		})
 	}, {
 		icon: 'fire',
 		activeIcon: 'fire-filled',
+		type: 'count',
 		num: '3'
 	}, ])
 	const action = (item) => {
-		if (item.activeIcon) {
+		if (item?.click) {
 			isClick.value = !isClick.value
 		} else {
 			item.click()
@@ -138,25 +128,6 @@
 				}
 			}
 
-			.actions {
-				display: flex;
-				align-items: center;
-				gap: 120rpx;
-
-				.action-item {
-					display: flex;
-					align-items: center;
-					gap: 10rpx;
-
-					.num {
-						font-size: 30rpx;
-						color: gray;
-						line-height: 30rpx;
-						height: 40rpx;
-						font-weight: 300;
-					}
-				}
-			}
 
 		}
 	}

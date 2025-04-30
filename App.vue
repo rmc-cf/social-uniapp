@@ -31,7 +31,6 @@
 		padding: 10px;
 	}
 	.common-container {
-		padding: 100rpx 0;
 	}
 	.search{
 		width: 50rpx;
@@ -43,8 +42,11 @@
 		border-radius: 100%;
 		background-color: limegreen;
 	}
-	.icon{
+	.icon,.avatar{
 		width: 65rpx;
 		height: 65rpx;
+	}
+	.avatar{
+		border-radius: 100%;
 	}
 </style>

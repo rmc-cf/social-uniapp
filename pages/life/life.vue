@@ -1,5 +1,5 @@
 <template>
-	<LifeTab  paddingX="30rpx"  paddingY="30rpx" position="fixed" bgColor="#fff" :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
+	<LifeTab  paddingX="30rpx"  paddingY="30rpx" position="sticky" left="0" top="0" bgColor="#fff" :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
 	<view class="common-container">
 		<Base>
 			<view  style="padding-top: 40rpx;">

@@ -19,6 +19,7 @@
 				</view>
 			</view>
 			<OnlineFriends></OnlineFriends>
+			<NotDevelop></NotDevelop>
 		</view>
 		</Base>
 	
@@ -104,7 +105,7 @@
 		font-size: 14px;
 		line-height: 24px;
 		gap: 85rpx;
-		background-color: purple;
+		background: linear-gradient(to right, rgb(24, 167, 94), rgb(24, 177, 54));;
 		.main-container,&{
 		display: flex;
 		flex-direction: column;

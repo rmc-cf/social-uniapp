@@ -10,3 +10,22 @@ export const goTo = (url) => {
 		url
 	})
 }
+export const goBack = ()=>{
+	uni.navigateBack()
+}
+export const previewImage = (data,index)=>{
+	  uni.previewImage({
+	    current: index,
+	    urls:   data.map(img => img.url) // 假设images是图片数组
+	  });
+}
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
+import 'dayjs/locale/zh-cn'
+
+dayjs.extend(relativeTime)
+dayjs.locale('zh-cn')
+
+export const  fromNow = (date)=> {
+  return dayjs(new Date(date)).fromNow()
+}

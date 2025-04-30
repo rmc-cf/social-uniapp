@@ -52,6 +52,7 @@ import { goTo,isCurrentPage} from '../../utils';
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		height: var(--tab-height);
 		.item{
 			flex:1;
 			display: flex;

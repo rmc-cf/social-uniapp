@@ -30,7 +30,7 @@
 			},
 			top: {
 				type: [Number, String],
-				default: 10
+				default: 0
 			},
 			mode: {
 				type: String,
@@ -84,7 +84,6 @@
 <style lang="scss" >
 	.uni-group {
 		background: #fff;
-		margin-top: 10px;
 		// border: 1px red solid;
 	}
 

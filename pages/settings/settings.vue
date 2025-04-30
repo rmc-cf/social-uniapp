@@ -1,11 +1,6 @@
 <template>
 	<view class="settings-container">
-		<view class="section" v-for="(item,index) in settings" :key="index">
-			<view class="section-item" v-for="(child,i) in item.items" :key="i">
-				<view class="title">{{child.title}}</view>
-				<uni-icons type="right"></uni-icons>
-			</view>
-		</view>
+	<ItemSection :data="settings"></ItemSection>
 	</view>
 </template>
 
@@ -37,18 +32,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 40rpx;
-		.section {
-			padding: 30rpx 20rpx;
-			background-color: white;
-			border-radius: 20rpx;
-			display: flex;
-			flex-direction: column;
-			gap: 55rpx;
-			.section-item {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-			}
-		}
+		
 	}
 </style>

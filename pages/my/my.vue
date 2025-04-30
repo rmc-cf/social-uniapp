@@ -1,6 +1,7 @@
 <template>
 	<Base>
-	<view class="my-container" style="background:url('/static/bg.jpg') no-repeat ;background-size:auto;">
+		<view style="width: 100%;height: 100%;;position: fixed; top:0;left:0;background:url('/static/bg.jpg') no-repeat ;background-size:auto;"></view>
+	<view class="my-container" >
 		<view class="head">
 			<view class="left">
 				<view class="my-dress">
@@ -12,7 +13,7 @@
 
 			</view>
 			<view class="right">
-				<uni-icons type="compose" color="#fff" size="26" @click="goTo('/pages/settings/settings')"></uni-icons>
+				<uni-icons type="compose" color="#fff" size="26" @click="goTo('/pages/userinfo/userinfo')"></uni-icons>
 				<uni-icons type="more-filled" color="#fff" size="26"
 					@click="goTo('/pages/settings/settings')"></uni-icons>
 			</view>
@@ -30,7 +31,7 @@
 
 		</view>
 		<view class="content">
-			<LifeTab  paddingY="30rpx"  :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
+			<LifeTab  paddingY="30rpx"  :data="tabData" position="sticky" top="80rpx" left="0" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
 			<component :is="currentComponent"></component>
 		</view>
 	</view>
@@ -59,11 +60,16 @@
 
 <style lang="scss" scoped>
 	.my-container {
+		position: relative;
 		min-height: 100vh;
 		padding: 25rpx var(--padding-x);
 		color: #fff;
 
 		.head {
+			z-index: 99;
+			position: sticky;
+			top: 25rpx;
+			left: var(--padding-x);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;

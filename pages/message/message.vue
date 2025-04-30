@@ -1,24 +1,14 @@
 <template>
-	<LifeTab  paddingX="30rpx"  paddingY="30rpx" bgColor="#fff" position="fixed" :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key">
+	<LifeTab paddingX="30rpx" paddingY="30rpx" bgColor="#fff" position="sticky" left="0" top="0" :data="tabData"
+		:curKey="curKey" @change-key="(key)=>curKey=key">
 		<template #right>
 			<view class="right">
 				<Status></Status>
-			<image class="search" src="/static/icons/search.png"/>
+				<image @click="goTo('/pages/search/search')" class="search" src="/static/icons/search.png" />
 			</view>
 		</template>
 	</LifeTab>
-	<view>
-		<view class="common-container">
-			<Base>
-			<uni-group title="时间排序" margin-top="2">
-				<view  class="group">
-					
-				<MessageItem v-for="(item,index) in 10" :key="index"></MessageItem>
-				</view>
-			</uni-group>
-			</Base>
-		</view>
-	</view>
+	<component :is="currentComponent"></component>
 </template>
 
 <script setup>
@@ -26,7 +16,12 @@
 		ref,
 		computed
 	} from 'vue';
-import { mesageTabList } from '../../data/message';
+	import {
+		mesageTabList
+	} from '../../data/message';
+	import {
+		goTo
+	} from '../../utils';
 
 
 	const tabData = ref(mesageTabList)
@@ -39,21 +34,16 @@ import { mesageTabList } from '../../data/message';
 </script>
 
 <style lang="scss" scoped>
-	.right{
+	.right {
 		display: flex;
 		align-items: center;
 		gap: 40rpx;
 		font-size: 30rpx;
-		.online{
+
+		.online {
 			display: flex;
 			align-items: center;
-			gap:8rpx
+			gap: 8rpx
 		}
 	}
-	.group{
-		display: flex;
-		flex-direction: column;
-		gap:40rpx;
-	}
-
 </style>

@@ -36,6 +36,36 @@
 		{
 			"navigationBarTitleText" : "设置"
 		}
+	},
+	{
+		"path" : "pages/userinfo/userinfo",
+		"style" : 
+		{
+			"navigationBarTitleText" : "个人信息"
+		}
+	},
+	{
+		"path" : "pages/search/search",
+		"style" : 
+		{
+			"navigationBarTitleText" : "找人"
+		}
+	},
+	{
+		"path" : "pages/life-detail/life-detail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "",
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path" : "pages/chat-detail/chat-detail",
+		"style" : 
+		{
+			"navigationBarTitleText" : "",
+			"navigationStyle": "custom"
+		}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

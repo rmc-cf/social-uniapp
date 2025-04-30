@@ -1,5 +1,5 @@
 <template>
-	<view class="message-item">
+	<view class="message-item" @click="goTo('/pages/chat-detail/chat-detail')">
 		<view class="left">
 			<image src="/static/logo.png" class="avatar" />
 			<view class="info">
@@ -20,6 +20,8 @@
 </template>
 
 <script setup>
+import { goTo } from '../../utils';
+
 </script>
 
 <style lang="scss" scoped>

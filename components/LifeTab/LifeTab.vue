@@ -1,5 +1,7 @@
 <template>
-	<view class="life-tab-container" :style="`background-color:${bgColor};position:${position};padding:${paddingY} ${paddingX}`">
+	<view class="life-tab-container" :style="`background-color:${bgColor};position:${position};padding:${paddingY} ${paddingX};top:${top};
+	left:${left};
+	`">
 		<view class="left">
 
 			<text @click="()=>emit('change-key',item.key)" class="item" v-for="(item,index) in data" :key="item"
@@ -27,6 +29,12 @@
 			position:{
 				type:String
 			},
+			left:{
+				type:String
+			},
+			top:{
+				type:String
+			},
 			paddingX:{
 				type:String,
 				default:'0'
@@ -44,10 +52,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		background-color: white;
+		background-color: transparent;
 		width: 100%;
 		box-sizing: border-box;
-
 		.left {
 			display: flex;
 			align-items: center;
