@@ -1,6 +1,6 @@
 <template>
 	<Base>
-	<view class="my-container" style="background:url('/static/bg.jpg') no-repeat ;background-size: cover;">
+	<view class="my-container" style="background:url('/static/bg.jpg') no-repeat ;background-size:auto;">
 		<view class="head">
 			<view class="left">
 				<view class="my-dress">
@@ -27,6 +27,11 @@
 					<view class="uid">ID:33232</view>
 				</view>
 			</view>
+
+		</view>
+		<view class="content">
+			<LifeTab  paddingY="30rpx"  :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
+			<component :is="currentComponent"></component>
 		</view>
 	</view>
 	</Base>
@@ -34,8 +39,22 @@
 
 <script setup>
 	import {
+		ref,
+		computed
+	} from 'vue';
+	import {
 		goTo
 	} from '../../utils';
+	import {
+		myTabs
+	} from '../../data/my';
+	const tabData = ref(myTabs)
+	const curKey = ref(tabData.value[1].key || 'life')
+	// 动态计算当前组件
+	const currentComponent = computed(() => {
+		const target = tabData.value.find(item => item.key === curKey.value);
+		return target?.component || null;
+	});
 </script>
 
 <style lang="scss" scoped>
@@ -43,6 +62,7 @@
 		min-height: 100vh;
 		padding: 25rpx var(--padding-x);
 		color: #fff;
+
 		.head {
 			display: flex;
 			align-items: center;
@@ -82,7 +102,6 @@
 			margin-top: 100rpx;
 
 			.avatar {
-				margin: 0 10rpx;
 				width: 170rpx;
 				height: 170rpx;
 				border-radius: 100%;
@@ -90,13 +109,16 @@
 			}
 
 			.user-desc {
+				margin-top: 20rpx;
 				display: flex;
 				flex-direction: column;
+
 				.nickname {
 					color: white;
 					font-size: 48rpx;
 				}
-				.keyword{
+
+				.keyword {
 
 					display: flex;
 					align-items: center;
@@ -104,6 +126,11 @@
 					font-size: 30rpx;
 				}
 			}
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
 		}
 	}
 </style>

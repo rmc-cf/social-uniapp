@@ -43,4 +43,8 @@
 		border-radius: 100%;
 		background-color: limegreen;
 	}
+	.icon{
+		width: 65rpx;
+		height: 65rpx;
+	}
 </style>

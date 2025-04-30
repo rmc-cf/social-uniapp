@@ -1,13 +1,12 @@
 <template>
-	<view class="base">
-		<slot></slot>
-		<Tabbar></Tabbar>
+	<view>
+		我的空间
 	</view>
 </template>
 
 <script>
 	export default {
-		name:"Base",
+		name:"MySpace",
 		data() {
 			return {
 				
@@ -16,8 +15,6 @@
 	}
 </script>
 
-<style lang="scss" scoped>
-	.base{
-	}
+<style>
 
 </style>

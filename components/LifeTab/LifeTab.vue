@@ -1,5 +1,5 @@
 <template>
-	<view class="life-tab-container">
+	<view class="life-tab-container" :style="`background-color:${bgColor};position:${position};padding:${paddingY} ${paddingX}`">
 		<view class="left">
 
 			<text @click="()=>emit('change-key',item.key)" class="item" v-for="(item,index) in data" :key="item"
@@ -19,15 +19,28 @@
 		data: {
 			type: Array
 		},
-		curKey: String
+		curKey: String,
+		bgColor:{
+			type:String,
+			default:'transparent'
+			},
+			position:{
+				type:String
+			},
+			paddingX:{
+				type:String,
+				default:'0'
+			},
+			paddingY:{
+				type:String,
+				default:'0'
+			}
 	})
 </script>
 
 <style lang="scss" scoped>
 	.life-tab-container {
 		z-index: 99;
-		position: fixed;
-		padding: 30rpx;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

@@ -1,5 +1,5 @@
 <template>
-	<LifeTab :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key">
+	<LifeTab  paddingX="30rpx"  paddingY="30rpx" bgColor="#fff" position="fixed" :data="tabData" :curKey="curKey" @change-key="(key)=>curKey=key">
 		<template #right>
 			<view class="right">
 				<Status></Status>

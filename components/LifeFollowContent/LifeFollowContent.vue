@@ -17,7 +17,6 @@
 
 <style lang="scss" scoped>
 	.life-follow-container{
-		min-height: 120vh;
 	}
 
 </style>
