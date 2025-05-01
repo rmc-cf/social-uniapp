@@ -1,0 +1,39 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-a25181d0:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.life-tab-container.data-v-a25181d0 {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+.life-tab-container .left.data-v-a25181d0 {
+  display: flex;
+  align-items: center;
+  gap: 40rpx;
+}
+.life-tab-container .left .item.data-v-a25181d0 {
+  transition: all 0.1s ease-in-out;
+}
+.life-tab-container .left .item.active.data-v-a25181d0 {
+  font-size: 36rpx;
+  font-weight: 800;
+  position: relative;
+}
+.life-tab-container .left .item.active.data-v-a25181d0::after {
+  content: "";
+  z-index: -1;
+  background-color: red;
+  width: 42rpx;
+  height: 20rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-10deg);
+}

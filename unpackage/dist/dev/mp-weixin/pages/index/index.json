@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "status-bar": "../../components/StatusBar/StatusBar",
+    "events-block": "../../components/EventsBlock/EventsBlock",
+    "online-friends": "../../components/OnlineFriends/OnlineFriends",
+    "not-develop": "../../components/NotDevelop/NotDevelop",
+    "base": "../../components/Base/Base"
+  }
+}

@@ -1,0 +1,73 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-2f1ef635:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.my-container.data-v-2f1ef635 {
+  position: relative;
+  min-height: 100vh;
+  padding: 25rpx var(--padding-x);
+  color: #fff;
+}
+.my-container .head.data-v-2f1ef635 {
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25rpx;
+  left: var(--padding-x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-container .head .left .my-dress.data-v-2f1ef635 {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5rpx 20rpx;
+  border-radius: 50rpx;
+}
+.my-container .head .left .my-dress .icon.data-v-2f1ef635 {
+  width: 40rpx;
+  height: 40rpx;
+}
+.my-container .head .left .my-dress .title.data-v-2f1ef635 {
+  color: #fff;
+  height: 60rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.my-container .head .right.data-v-2f1ef635 {
+  display: flex;
+  align-items: center;
+  gap: 26rpx;
+}
+.my-container .info.data-v-2f1ef635 {
+  margin-top: 100rpx;
+}
+.my-container .info .avatar.data-v-2f1ef635 {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+.my-container .info .user-desc.data-v-2f1ef635 {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.my-container .info .user-desc .nickname.data-v-2f1ef635 {
+  color: white;
+  font-size: 48rpx;
+}
+.my-container .info .user-desc .keyword.data-v-2f1ef635 {
+  display: flex;
+  align-items: center;
+  gap: 15rpx;
+  font-size: 30rpx;
+}
+.my-container .content.data-v-2f1ef635 {
+  display: flex;
+  flex-direction: column;
+}

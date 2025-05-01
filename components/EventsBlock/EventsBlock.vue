@@ -10,7 +10,7 @@
 			</view>
 			<view class="desc">{{item.desc}}</view>
 		</view>
-		<view class="btn">{{item.btn.display}} -></view>
+		<view class="btn">{{item?.btn?.display}} -></view>
 		<image class="footerBg" :src="item.footerBg" mode="aspectFit" />
 	</view>
 </template>
@@ -32,6 +32,8 @@
 		border-radius: 20rpx;
 		padding: 14rpx;
 		min-height: 90rpx;
+		height: 100%;
+		box-sizing: border-box;
 		.head {
 			.title {
 				font-weight: 800;

@@ -1,0 +1,1 @@
+<status-bar class="data-v-4c1b26cf" u-i="4c1b26cf-0" bind:__l="__l"></status-bar><base class="data-v-4c1b26cf" u-s="{{['d']}}" u-i="4c1b26cf-1" bind:__l="__l"><message-list wx:if="{{a}}" class="data-v-4c1b26cf" u-i="4c1b26cf-2,4c1b26cf-1" bind:__l="__l"></message-list></base>

@@ -18,7 +18,6 @@
 	@import '@/uni_modules/uni-scss/index.scss';
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
-	@import '@/styles/variables.scss';
 	// 设置整个项目的背景色
 	page {
 		background-color: #f5f5f5;

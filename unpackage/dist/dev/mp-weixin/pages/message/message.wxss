@@ -1,0 +1,17 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-4c1b26cf:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.right.data-v-4c1b26cf {
+  display: flex;
+  align-items: center;
+  gap: 40rpx;
+  font-size: 30rpx;
+}
+.right .online.data-v-4c1b26cf {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}

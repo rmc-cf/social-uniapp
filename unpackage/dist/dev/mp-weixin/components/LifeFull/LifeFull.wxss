@@ -1,0 +1,10 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-8c364e88:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.life-full.data-v-8c364e88 {
+  background-color: #fff;
+  padding: 20rpx;
+}

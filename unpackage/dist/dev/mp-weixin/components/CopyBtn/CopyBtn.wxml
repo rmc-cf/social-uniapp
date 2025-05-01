@@ -1,0 +1,1 @@
+<view class="copy-btn data-v-ca2553e1" bindtap="{{a}}"> 复制 </view>

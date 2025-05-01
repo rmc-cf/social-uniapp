@@ -1,0 +1,1 @@
+{"version":3,"file":"chat-detail.js","sources":["C:/Users/10480/Desktop/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvY2hhdC1kZXRhaWwvY2hhdC1kZXRhaWwudnVl"],"sourcesContent":["import MiniProgramPage from 'E:/uniapp_pro/social/pages/chat-detail/chat-detail.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}

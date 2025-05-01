@@ -1,0 +1,1 @@
+{"version":3,"file":"MySpace.js","sources":["C:/Users/10480/Desktop/HBuilderX/plugins/uniapp-cli-vite/uniComponent:/RTovdW5pYXBwX3Byby9zb2NpYWwvY29tcG9uZW50cy9NeVNwYWNlL015U3BhY2UudnVl"],"sourcesContent":["import Component from 'E:/uniapp_pro/social/components/MySpace/MySpace.vue'\nwx.createComponent(Component)"],"names":["Component"],"mappings":";;AACA,GAAG,gBAAgBA,QAAS,SAAA;"}

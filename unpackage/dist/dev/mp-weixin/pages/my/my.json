@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "status-bar": "../../components/StatusBar/StatusBar",
+    "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "life-tab": "../../components/LifeTab/LifeTab",
+    "my-space": "../../components/MySpace/MySpace",
+    "my-life": "../../components/MyLife/MyLife",
+    "my-relation": "../../components/MyRelation/MyRelation",
+    "base": "../../components/Base/Base"
+  }
+}

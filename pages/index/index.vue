@@ -1,10 +1,14 @@
 <template>
 	<Base>
 		<view class="container">
+			<StatusBar></StatusBar>
 			<view class="main-container">
 				<view class="block-container">
+					<view class="block-item">
+						
 					<EventsBlock :item="events[0]"></EventsBlock>
-					<view class="list">
+					</view>
+					<view class="block-item list">
 						<view v-for="(item,index) in events.slice(1,3)" :key="index">
 							<EventsBlock :item="item"></EventsBlock>
 						</view>
@@ -71,7 +75,11 @@
 			title: '遇见3',
 			desc: '还可以遇见',
 			bgColor: 'radial-gradient(at center bottom, rgb(253, 204, 175), rgb(253, 224, 71))',
-			footerBg: '/static/icons/planet.png'
+			footerBg: '/static/icons/planet.png',
+			btn: {
+				display: '匿名匹配',
+				url: '/'
+			}
 
 		},
 		{
@@ -100,8 +108,7 @@
 
 <style lang="scss" scoped>
 	.container {
-		min-height: 100vh;
-		padding: 20px;
+		padding: 20rpx;
 		font-size: 14px;
 		line-height: 24px;
 		gap: 85rpx;
@@ -118,7 +125,7 @@
 			grid-template-columns: repeat(2, 1fr);
 			gap: 16rpx;
 
-			&>* {
+			.block-item {
 				flex: 1
 			}
 

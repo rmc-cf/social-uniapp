@@ -1,0 +1,1 @@
+<view class="settings-container data-v-7fad0a1c"><item-section wx:if="{{a}}" class="data-v-7fad0a1c" u-i="7fad0a1c-0" bind:__l="__l" u-p="{{a}}"></item-section></view>

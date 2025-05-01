@@ -1,0 +1,1 @@
+<view class="userinfo-container data-v-2ea52cef"><item-section wx:if="{{a}}" class="data-v-2ea52cef" u-i="2ea52cef-0" bind:__l="__l" u-p="{{a}}"></item-section></view>

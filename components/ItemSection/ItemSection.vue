@@ -3,12 +3,15 @@
 		<view class="section-item" v-for="(child,i) in item.items" :key="i">
 			<view class="title">{{child.title}}</view>
 			<view class="right">
-				<component v-if="isVueComponent(child.replaceContent)" :is="child.replaceContent"
-					v-bind="child.props" />
-				<!-- 如果不是组件，直接显示内容 -->
-				<view v-else class="simple-content">
-					{{ child.replaceContent }}
-				</view>
+				<template v-if="child.replaceContent">
+					<UserAvatar v-if="child.replaceContent=='avatar'" v-bind="child.props" ></UserAvatar>
+
+					<CopyBtn  v-if="child.replaceContent=='copy'" v-bind="child.props" ></CopyBtn>
+					<!-- 如果不是组件，直接显示内容 -->
+					<view v-else-if="child.replaceContent==='pure'" class="simple-content">
+						{{ child.replaceContent }}
+					</view>
+				</template>
 				<template v-if="child.replaceType!==1">
 					<uni-icons type="right"></uni-icons>
 				</template>

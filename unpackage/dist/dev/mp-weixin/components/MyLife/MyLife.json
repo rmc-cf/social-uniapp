@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "life-timeline": "../LifeTimeline/LifeTimeline"
+  }
+}

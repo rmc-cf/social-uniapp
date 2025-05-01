@@ -1,0 +1,61 @@
+/* 水平间距 */
+/* 水平间距 */
+:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20rpx;
+  padding: 14rpx;
+  min-height: 90rpx;
+  height: 100%;
+  box-sizing: border-box;
+}
+.item .head .title {
+  font-weight: 800;
+  font-size: 33rpx;
+  display: inline-flex;
+}
+.item .head .title .char-box {
+  position: relative;
+  /* 字间距 */
+}
+.item .head .title .circle-bg {
+  width: 48rpx;
+  /* 圆圈大小 */
+  height: 48rpx;
+  background-color: #fff;
+  /* 圆圈背景色（示例红色） */
+  border-radius: 80% 60% 80% 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .head .desc {
+  color: #fff;
+  font-size: 18rpx;
+}
+.item .btn {
+  align-self: start;
+  color: #fff;
+  background-color: #000;
+  border-radius: 230rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rpx;
+  padding: 10rpx;
+  font-size: 20rpx;
+}
+.item .footerBg {
+  position: absolute;
+  right: 12rpx;
+  bottom: 12rpx;
+  width: 30%;
+  height: 60%;
+  object-fit: cover;
+}

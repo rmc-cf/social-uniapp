@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/my/my",
+    "pages/life/life",
+    "pages/settings/settings",
+    "pages/userinfo/userinfo",
+    "pages/search/search",
+    "pages/life-detail/life-detail",
+    "pages/chat-detail/chat-detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+<view class="life-tab-container data-v-a25181d0" style="{{b}}"><view class="left data-v-a25181d0"><text wx:for="{{a}}" wx:for-item="item" wx:key="c" bindtap="{{item.b}}" class="{{['item', 'data-v-a25181d0', item.d && 'active']}}">{{item.a}}</text></view><view class="right data-v-a25181d0"><slot name="right"></slot></view></view>

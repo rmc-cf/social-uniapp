@@ -1,0 +1,23 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-a7643a27:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.actions.data-v-a7643a27 {
+  display: flex;
+  align-items: center;
+  gap: 120rpx;
+}
+.actions .action-item.data-v-a7643a27 {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+.actions .action-item .num.data-v-a7643a27 {
+  font-size: 30rpx;
+  color: gray;
+  line-height: 30rpx;
+  height: 40rpx;
+  font-weight: 300;
+}

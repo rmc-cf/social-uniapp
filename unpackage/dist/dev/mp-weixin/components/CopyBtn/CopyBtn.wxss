@@ -1,0 +1,15 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-ca2553e1:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.copy-btn.data-v-ca2553e1 {
+  color: grey;
+  font-size: 26rpx;
+  background-color: gainsboro;
+  padding: 6rpx 20rpx;
+  border-radius: 50rpx;
+  line-height: 40rpx;
+  height: 44rpx;
+}

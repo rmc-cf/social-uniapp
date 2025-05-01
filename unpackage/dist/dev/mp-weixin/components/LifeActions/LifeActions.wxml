@@ -1,0 +1,1 @@
+<view class="actions data-v-a7643a27"><view wx:for="{{a}}" wx:for-item="item" wx:key="e" class="action-item data-v-a7643a27"><uni-icons wx:if="{{item.c}}" class="data-v-a7643a27" bindclick="{{item.a}}" u-i="{{item.b}}" bind:__l="__l" u-p="{{item.c}}"></uni-icons><view class="num data-v-a7643a27">{{item.d}}</view></view></view>

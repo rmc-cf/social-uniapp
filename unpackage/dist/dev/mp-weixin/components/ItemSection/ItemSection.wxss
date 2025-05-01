@@ -1,0 +1,35 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-2313687f:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.section.data-v-2313687f {
+  padding: 30rpx 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 55rpx;
+}
+.section .section-item.data-v-2313687f {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section .section-item .right.data-v-2313687f {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+.section .section-item .right .simple-content.data-v-2313687f {
+  font-size: 28rpx;
+  line-clamp: 1;
+  max-width: 400rpx;
+  white-space: nowrap;
+  /* 禁止换行 */
+  overflow: hidden;
+  /* 隐藏超出部分 */
+  text-overflow: ellipsis;
+  /* 显示省略号 */
+}

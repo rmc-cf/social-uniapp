@@ -4,7 +4,7 @@ import MySpaceVue from "../components/MySpace/MySpace.vue";
 
 export const myTabs = [{
 			name: '空间',
-			key: 'spacce',
+			key: 'space',
 			component: MySpaceVue
 		},
 		{

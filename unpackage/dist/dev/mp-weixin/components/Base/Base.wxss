@@ -1,0 +1,9 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-2c20685c:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.base.data-v-2c20685c {
+  padding-bottom: var(--tab-height)var(--padding-x);
+}

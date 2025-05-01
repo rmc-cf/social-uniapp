@@ -1,0 +1,11 @@
+/* 水平间距 */
+/* 水平间距 */
+:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx;
+}

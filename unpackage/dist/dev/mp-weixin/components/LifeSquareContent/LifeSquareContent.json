@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "life-main-item": "../LifeMainItem/LifeMainItem"
+  }
+}

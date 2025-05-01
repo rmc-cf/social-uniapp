@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "message-item": "../MessageItem/MessageItem",
+    "uni-group": "../../uni_modules/uni-group/components/uni-group/uni-group",
+    "base": "../Base/Base"
+  }
+}

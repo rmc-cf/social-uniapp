@@ -1,0 +1,1 @@
+<view class="square-container data-v-45845c06"><life-main-item wx:for="{{a}}" wx:for-item="item" wx:key="a" class="data-v-45845c06" u-i="{{item.b}}" bind:__l="__l" u-p="{{item.c}}"></life-main-item></view>

@@ -1,0 +1,38 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-7fb855be:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.online-item.data-v-7fb855be {
+  padding: 25rpx 20rpx;
+  background: linear-gradient(to right, #c7d2fe, #fecaca, #fef9c3);
+  border-radius: 70rpx 20rpx 20rpx 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+}
+.online-item .user.data-v-7fb855be {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+.online-item .user .avatar.data-v-7fb855be {
+  width: 120rpx;
+  height: 120rpx;
+}
+.online-item .user .info .nickname.data-v-7fb855be {
+  color: #001849;
+  font-weight: 700;
+}
+.online-item .user .info .desc.data-v-7fb855be {
+  margin-top: 10rpx;
+  color: dimgray;
+}
+.online-item .btn.data-v-7fb855be {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50rpx;
+  padding: 10rpx 25rpx;
+}

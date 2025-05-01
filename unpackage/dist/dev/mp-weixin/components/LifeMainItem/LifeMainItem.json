@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "life-actions": "../LifeActions/LifeActions",
+    "comment-list": "../CommentList/CommentList"
+  }
+}

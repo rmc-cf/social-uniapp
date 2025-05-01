@@ -1,0 +1,23 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-9367190c:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.navbar.data-v-9367190c {
+  z-index: 99;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15rpx 6rpx;
+}
+.navbar .left.data-v-9367190c {
+  display: flex;
+  align-items: center;
+}

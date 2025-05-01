@@ -1,0 +1,12 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-7fad0a1c:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.settings-container.data-v-7fad0a1c {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx;
+}

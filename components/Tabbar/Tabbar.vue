@@ -1,5 +1,5 @@
 <template>
-	<view class="tarbar-container">
+	<view class="tarbar-container" :style="`bottom:${statusHeight}rpx;`">
 		<view @click="goTo(item.url)" class="item"  v-for="(item,index) in list" :key="index">
 			<uni-icons :size="24" :type="isCurrentPage(item.url)?item.activeIcon:item.icon" size="30"></uni-icons>
 			<view class="title">{{item.title}}</view>
@@ -12,8 +12,9 @@
 </template>
 
 <script setup>
+	
 import { ref } from 'vue';
-import { goTo,isCurrentPage} from '../../utils';
+import { goTo,isCurrentPage, statusHeight} from '../../utils';
 	const list = ref([
 		{
 			title:'遇见',
@@ -44,9 +45,8 @@ import { goTo,isCurrentPage} from '../../utils';
 		z-index: 99;
 		background-color: white;
 		position: fixed;
-		bottom:var(--padding-x);
-		left: var(--padding-x);
-		right: var(--padding-x);
+ 		left: $padding-x;
+		right: $padding-x;
 		border-radius: 40rpx;
 		padding: 16rpx;
 		display: flex;

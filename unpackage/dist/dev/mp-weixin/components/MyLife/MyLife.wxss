@@ -1,0 +1,39 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-0dc73165:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.share-card.data-v-0dc73165 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 25rpx;
+  padding: 18rpx;
+}
+.share-card .left.data-v-0dc73165 {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+.share-card .left .icon.data-v-0dc73165 {
+  width: 100rpx;
+  height: 100rpx;
+}
+.share-card .left .label.data-v-0dc73165 {
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.share-card .btn.data-v-0dc73165 {
+  border-radius: 40rpx;
+  color: #000;
+  background-color: #fff;
+  padding: 14rpx;
+  font-size: 24rpx;
+  font-weight: 800;
+}

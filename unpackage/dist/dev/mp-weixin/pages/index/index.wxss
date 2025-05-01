@@ -1,0 +1,33 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-1cf27b2a:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.container.data-v-1cf27b2a {
+  padding: 20rpx;
+  font-size: 14px;
+  line-height: 24px;
+  gap: 85rpx;
+  background: linear-gradient(to right, #18a75e, #18b136);
+}
+.container .main-container.data-v-1cf27b2a, .container.data-v-1cf27b2a {
+  display: flex;
+  flex-direction: column;
+}
+.container .main-container.data-v-1cf27b2a {
+  gap: 16rpx;
+}
+.container .block-container.data-v-1cf27b2a {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16rpx;
+}
+.container .block-container .block-item.data-v-1cf27b2a {
+  flex: 1;
+}
+.container .block-container .list.data-v-1cf27b2a {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}

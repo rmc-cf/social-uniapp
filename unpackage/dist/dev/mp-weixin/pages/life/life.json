@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "status-bar": "../../components/StatusBar/StatusBar",
+    "life-tab": "../../components/LifeTab/LifeTab",
+    "life-square-content": "../../components/LifeSquareContent/LifeSquareContent",
+    "life-follow-content": "../../components/LifeFollowContent/LifeFollowContent",
+    "life-newest-content": "../../components/LifeNewestContent/LifeNewestContent",
+    "base": "../../components/Base/Base"
+  }
+}

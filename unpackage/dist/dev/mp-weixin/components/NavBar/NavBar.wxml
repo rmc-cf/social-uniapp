@@ -1,0 +1,1 @@
+<view class="navbar data-v-9367190c"><view class="left data-v-9367190c"><uni-icons wx:if="{{b}}" class="data-v-9367190c" bindclick="{{a}}" u-i="9367190c-0" bind:__l="__l" u-p="{{b}}"></uni-icons><slot name="left"></slot></view><slot name="center"></slot><slot name="right"></slot></view>

@@ -1,0 +1,41 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-5ef11cd0:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.space-timeline.data-v-5ef11cd0 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rpx;
+}
+.space-timeline .item.data-v-5ef11cd0 {
+  display: flex;
+  flex-direction: column;
+  gap: 15rpx;
+}
+.space-timeline .item .content-item.data-v-5ef11cd0 {
+  display: flex;
+  gap: 50rpx;
+}
+.space-timeline .item .content-item .time.data-v-5ef11cd0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.space-timeline .item .content-item .time .date.data-v-5ef11cd0 {
+  font-size: 60rpx;
+}
+.space-timeline .item .content-item .time .month.data-v-5ef11cd0 {
+  font-size: 30rpx;
+}
+.space-timeline .item .content-item .content.data-v-5ef11cd0 {
+  flex: 1;
+  padding-top: 20rpx;
+}
+.space-timeline .line.data-v-5ef11cd0 {
+  margin-left: 30rpx;
+  height: 96rpx;
+  width: 4rpx;
+  background-color: darkgray;
+}

@@ -7,18 +7,17 @@
 
 <script>
 	export default {
-		name:"Base",
+		name: "Base",
 		data() {
 			return {
-				
+
 			};
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-	.base{
+	.base {
 		padding-bottom: var(--tab-height)+var(--padding-x);
 	}
-
 </style>

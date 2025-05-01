@@ -1,0 +1,10 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-45845c06:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.square-container.data-v-45845c06 {
+  display: flex;
+  flex-direction: column;
+}

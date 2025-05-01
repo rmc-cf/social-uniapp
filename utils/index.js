@@ -29,3 +29,14 @@ dayjs.locale('zh-cn')
 export const  fromNow = (date)=> {
   return dayjs(new Date(date)).fromNow()
 }
+
+// 状态栏高度
+export const statusHeight = uni.getSystemInfoSync().statusBarHeight;
+ 
+// 导航栏信息
+export  const menuButtonInfo = uni.getMenuButtonBoundingClientRect();
+// 导航栏高度--导航栏高度默认44
+export  const navHeight = menuButtonInfo.height + (menuButtonInfo.top - statusHeight) * 2;
+ 
+// 状态栏高度+导航栏高度
+export  const stickyHeight = statusHeight + navHeight

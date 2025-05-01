@@ -1,4 +1,5 @@
 <template>
+	<StatusBar></StatusBar>
 	<Base>
 		<view style="width: 100%;height: 100%;;position: fixed; top:0;left:0;background:url('/static/bg.jpg') no-repeat ;background-size:auto;"></view>
 	<view class="my-container" >
@@ -32,7 +33,10 @@
 		</view>
 		<view class="content">
 			<LifeTab  paddingY="30rpx"  :data="tabData" position="sticky" top="80rpx" left="0" :curKey="curKey" @change-key="(key)=>curKey=key"></LifeTab>
-			<component :is="currentComponent"></component>
+			<!-- <component :is="currentComponent"></component> -->
+			<MySpace v-if="curKey=='space'"></MySpace> 
+			<MyLife v-else-if="curKey=='life'"></MyLife>
+			<MyRelation v-else-if="curKey=='relation'"></MyRelation>
 		</view>
 	</view>
 	</Base>
@@ -51,11 +55,6 @@
 	} from '../../data/my';
 	const tabData = ref(myTabs)
 	const curKey = ref(tabData.value[1].key || 'life')
-	// 动态计算当前组件
-	const currentComponent = computed(() => {
-		const target = tabData.value.find(item => item.key === curKey.value);
-		return target?.component || null;
-	});
 </script>
 
 <style lang="scss" scoped>

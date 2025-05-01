@@ -15,28 +15,23 @@
 		items: [{
 			title: '头像',
 			replaceType: 0,
-			replaceContent: UserAvatarVue
+			type:'avatar'
 		}, {
 			title: `迷尘ID：${id.value}`,
 			replaceType: 1,
-			replaceContent: CopyBtnVue,
+			type:'copy',
 			props: {
 				text: id.value,
 			}
 		}, {
 			title: '自我介绍',
 			replaceContent: '我就是我，是颜色不一样的烟火',
-			props: {
-				text: id.value,
-			}
+			type:'pure'
 		}, {
 			title: '修改遇见登记卡',
 		}, {
 			title: '主页背景卡',
 			replaceContent: 123,
-			props: {
-				text: id.value,
-			}
 		}, {
 			title: '昵称',
 			replaceContent: 'CFYYDS',

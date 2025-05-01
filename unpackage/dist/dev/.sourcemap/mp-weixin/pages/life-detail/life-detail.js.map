@@ -1,0 +1,1 @@
+{"version":3,"file":"life-detail.js","sources":["C:/Users/10480/Desktop/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvbGlmZS1kZXRhaWwvbGlmZS1kZXRhaWwudnVl"],"sourcesContent":["import MiniProgramPage from 'E:/uniapp_pro/social/pages/life-detail/life-detail.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}

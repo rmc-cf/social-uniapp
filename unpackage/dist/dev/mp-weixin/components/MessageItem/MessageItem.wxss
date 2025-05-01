@@ -1,0 +1,53 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-662f014e:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.message-item.data-v-662f014e {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message-item .left.data-v-662f014e {
+  display: flex;
+  gap: 20rpx;
+}
+.message-item .left .avatar.data-v-662f014e {
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 100%;
+}
+.message-item .left .info.data-v-662f014e {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+.message-item .left .info .info-head.data-v-662f014e {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+.message-item .left .info .info-head .nickname.data-v-662f014e {
+  font-weight: 500;
+  font-size: 30rpx;
+}
+.message-item .left .info .recent-msg.data-v-662f014e {
+  color: darkgray;
+  font-size: 25rpx;
+}
+.message-item .right.data-v-662f014e {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  gap: 12rpx;
+  font-size: 26rpx;
+}
+.message-item .right .datetime.data-v-662f014e {
+  color: darkgray;
+}
+.message-item .right .origin.data-v-662f014e {
+  color: darkgray;
+}

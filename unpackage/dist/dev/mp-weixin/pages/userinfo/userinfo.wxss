@@ -1,0 +1,9 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-2ea52cef:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.userinfo-container.data-v-2ea52cef {
+  padding: 30rpx;
+}

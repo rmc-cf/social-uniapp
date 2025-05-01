@@ -1,0 +1,1 @@
+<view class="item" style="{{e}}"><view class="head"><view class="title"><view wx:for="{{a}}" wx:for-item="char" wx:key="b" class="char-box"><view class="circle-bg"><text class="char-text">{{char.a}}</text></view></view></view><view class="desc">{{b}}</view></view><view class="btn">{{c}} -></view><image class="footerBg" src="{{d}}" mode="aspectFit"/></view>

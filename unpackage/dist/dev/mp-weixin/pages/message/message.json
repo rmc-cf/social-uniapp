@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "status-bar": "../../components/StatusBar/StatusBar",
+    "message-list": "../../components/MessageList/MessageList",
+    "base": "../../components/Base/Base"
+  }
+}
