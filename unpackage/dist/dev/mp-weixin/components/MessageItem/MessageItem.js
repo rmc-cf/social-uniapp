@@ -1,6 +1,5 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
-const common_assets = require("../../common/assets.js");
 const utils_index = require("../../utils/index.js");
 if (!Array) {
   const _easycom_uni_tag2 = common_vendor.resolveComponent("uni-tag");
@@ -12,17 +11,24 @@ if (!Math) {
 }
 const _sfc_main = {
   __name: "MessageItem",
+  props: {
+    item: {
+      type: Object
+    }
+  },
   setup(__props) {
     return (_ctx, _cache) => {
       return {
-        a: common_assets._imports_0$4,
-        b: common_vendor.p({
+        a: __props.item.to.avatar,
+        b: common_vendor.t(__props.item.to.nickname),
+        c: common_vendor.p({
           type: "success",
           size: "small",
           circle: true,
           text: "最近常聊"
         }),
-        c: common_vendor.o(($event) => common_vendor.unref(utils_index.goTo)("/pages/chat-detail/chat-detail"))
+        d: common_vendor.t(__props.item.content),
+        e: common_vendor.o(($event) => common_vendor.unref(utils_index.goTo)("/pages/chat-detail/chat-detail"))
       };
     };
   }

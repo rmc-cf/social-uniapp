@@ -27,7 +27,7 @@ const _sfc_main = {
   __name: "my",
   setup(__props) {
     const tabData = common_vendor.ref(data_my.myTabs);
-    const curKey = common_vendor.ref(tabData.value[1].key || "life");
+    const curKey = common_vendor.ref(tabData.value[2].key || "life");
     return (_ctx, _cache) => {
       return common_vendor.e({
         a: common_assets._imports_0$1,

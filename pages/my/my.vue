@@ -54,7 +54,7 @@
 		myTabs
 	} from '../../data/my';
 	const tabData = ref(myTabs)
-	const curKey = ref(tabData.value[1].key || 'life')
+	const curKey = ref(tabData.value[2].key || 'life')
 </script>
 
 <style lang="scss" scoped>

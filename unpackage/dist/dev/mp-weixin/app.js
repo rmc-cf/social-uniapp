@@ -11,6 +11,7 @@ if (!Math) {
   "./pages/search/search.js";
   "./pages/life-detail/life-detail.js";
   "./pages/chat-detail/chat-detail.js";
+  "./pages/account/account.js";
 }
 const _sfc_main = {
   onLaunch: function() {

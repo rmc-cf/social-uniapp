@@ -3,23 +3,19 @@
 		<Base>
 		<uni-group title="时间排序" margin-top="0">
 			<view  class="group">
-				
-			<MessageItem v-for="(item,index) in 10" :key="index"></MessageItem>
+			<MessageItem v-for="(item,index) in data" :key="index" :item="item"></MessageItem>
 			</view>
 		</uni-group>
 		</Base>
 	</view>
 </template>
 
-<script>
-	export default {
-		name:"MessageList",
-		data() {
-			return {
-				
-			};
+<script setup>
+	defineProps({
+		data:{
+			type:Array
 		}
-	}
+	})
 </script>
 
 <style lang="scss">

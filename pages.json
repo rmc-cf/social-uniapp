@@ -11,7 +11,8 @@
 		"style" : 
 		{
 			"navigationBarTitleText" : "",
-			"navigationStyle": "custom"
+			"navigationStyle": "custom",
+			"enablePullDownRefresh": true
 		}
 	},
 	{
@@ -65,6 +66,13 @@
 		{
 			"navigationBarTitleText" : "",
 			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path" : "pages/account/account",
+		"style" : 
+		{
+			"navigationBarTitleText" : ""
 		}
 	}],
 	"globalStyle": {

@@ -1,7 +1,7 @@
 <template>
 		<StatusBar></StatusBar>
 	<Base>
-	<MessageList v-if="curKey=='messages'"></MessageList>
+	<MessageList v-if="curKey=='messages'" :data="messageList"></MessageList>
 	</Base>
 	
 	<!-- <component :is="currentComponent"></component> -->
@@ -18,10 +18,43 @@
 	import {
 		goTo
 	} from '../../utils';
-
+   import { onPullDownRefresh , onReachBottom } from "@dcloudio/uni-app"
 
 	const tabData = ref(mesageTabList)
 	const curKey = ref(tabData.value[1].key || 'friends')
+	const messageList = ref([
+		{
+			to:{
+				avatar:'/static/logo.png',
+				nickname:'cf'
+			},
+			content:'123123'
+		},	{
+			to:{
+				avatar:'/static/logo.png',
+				nickname:'cf'
+			},
+			content:'123123'
+		}	,{
+			to:{
+				avatar:'/static/logo.png',
+				nickname:'cf'
+			},
+			content:'123123'
+		},	{
+			to:{
+				avatar:'/static/logo.png',
+				nickname:'cf'
+			},
+			content:'123123'
+		}
+	])
+	 onPullDownRefresh(() => {
+	        console.log("下拉刷新")
+	    })
+	    onReachBottom(() => {
+	        console.log("上拉加载更多")
+	    })
 </script>
 
 <style lang="scss" scoped>

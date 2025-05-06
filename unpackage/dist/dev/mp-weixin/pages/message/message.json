@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "",
   "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "status-bar": "../../components/StatusBar/StatusBar",
     "message-list": "../../components/MessageList/MessageList",

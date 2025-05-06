@@ -1,0 +1,59 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-8cce343a:root {
+  --padding-x: 20rpx;
+  --tab-height: 90rpx;
+}
+.account-container.data-v-8cce343a {
+  min-height: 90vh;
+  background-color: orangered;
+  padding: 120rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.account-container .app-info.data-v-8cce343a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account-container .app-info .logo.data-v-8cce343a {
+  background-color: #fff;
+  padding: 28rpx;
+  border-radius: 30rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+.account-container .app-info .app-name.data-v-8cce343a {
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+  font-size: 50rpx;
+}
+.account-container .curPhone.data-v-8cce343a {
+  margin-top: 120rpx;
+  margin-bottom: 40rpx;
+  font-weight: 500;
+  font-size: 36rpx;
+}
+.account-container .btns.data-v-8cce343a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+.account-container .btns .other-number-btn.data-v-8cce343a,
+.account-container .btns .one-btn.data-v-8cce343a {
+  width: 100%;
+  color: #fff;
+  border-radius: 20rpx;
+}
+.account-container .btns .one-btn.data-v-8cce343a {
+  border: 4rpx solid transparent;
+  background-color: #000;
+}
+.account-container .btns .other-number-btn.data-v-8cce343a {
+  border: 4rpx solid #fff;
+  background: transparent;
+}

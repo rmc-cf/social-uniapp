@@ -8,7 +8,8 @@
     "pages/userinfo/userinfo",
     "pages/search/search",
     "pages/life-detail/life-detail",
-    "pages/chat-detail/chat-detail"
+    "pages/chat-detail/chat-detail",
+    "pages/account/account"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -1,14 +1,14 @@
 <template>
 	<view class="message-item" @click="goTo('/pages/chat-detail/chat-detail')">
 		<view class="left">
-			<image src="/static/logo.png" class="avatar" />
+			<image :src="item.to.avatar" class="avatar" />
 			<view class="info">
 				<view class="info-head">
 
-					<view class="nickname">今天吃啥</view>
-					<uni-tag style="font-size: 22rpx;" type="success" size="small" class="status" circle text="最近常聊"></uni-tag>
+					<view class="nickname">{{item.to.nickname}}</view>
+					<uni-tag  type="success" size="small" class="status" circle text="最近常聊"></uni-tag>
 				</view>
-				<view class="recent-msg">[表情]</view>
+				<view class="recent-msg">{{item.content}}</view>
 			</view>
 		</view>
 		<view class="right">
@@ -21,7 +21,11 @@
 
 <script setup>
 import { goTo } from '../../utils';
-
+defineProps({
+	item:{
+		type:Object
+	}
+})
 </script>
 
 <style lang="scss" scoped>
@@ -47,7 +51,7 @@ import { goTo } from '../../utils';
 				.info-head {
 					display: flex;
 					align-items: center;
-					gap: 10rpx;
+					gap: 18rpx;
 
 					.nickname {
 						font-weight: 500;

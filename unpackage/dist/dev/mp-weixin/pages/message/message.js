@@ -19,10 +19,50 @@ const _sfc_main = {
   setup(__props) {
     const tabData = common_vendor.ref(data_message.mesageTabList);
     const curKey = common_vendor.ref(tabData.value[1].key || "friends");
+    const messageList = common_vendor.ref([
+      {
+        to: {
+          avatar: "/static/logo.png",
+          nickname: "cf"
+        },
+        content: "123123"
+      },
+      {
+        to: {
+          avatar: "/static/logo.png",
+          nickname: "cf"
+        },
+        content: "123123"
+      },
+      {
+        to: {
+          avatar: "/static/logo.png",
+          nickname: "cf"
+        },
+        content: "123123"
+      },
+      {
+        to: {
+          avatar: "/static/logo.png",
+          nickname: "cf"
+        },
+        content: "123123"
+      }
+    ]);
+    common_vendor.onPullDownRefresh(() => {
+      common_vendor.index.__f__("log", "at pages/message/message.vue:53", "下拉刷新");
+    });
+    common_vendor.onReachBottom(() => {
+      common_vendor.index.__f__("log", "at pages/message/message.vue:56", "上拉加载更多");
+    });
     return (_ctx, _cache) => {
       return common_vendor.e({
         a: curKey.value == "messages"
-      }, curKey.value == "messages" ? {} : {});
+      }, curKey.value == "messages" ? {
+        b: common_vendor.p({
+          data: messageList.value
+        })
+      } : {});
     };
   }
 };
