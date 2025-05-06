@@ -26,17 +26,23 @@ const _sfc_main$2 = {
     };
   }
 };
-const Component$2 = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main$2, [["__scopeId", "data-v-0dc73165"]]);
+const Component$1 = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main$2, [["__scopeId", "data-v-0dc73165"]]);
+if (!Array) {
+  const _easycom_RelationItem2 = common_vendor.resolveComponent("RelationItem");
+  _easycom_RelationItem2();
+}
+const _easycom_RelationItem = () => "../components/RelationItem/RelationItem.js";
+if (!Math) {
+  _easycom_RelationItem();
+}
 const _sfc_main$1 = {
-  name: "MyRelation",
-  data() {
-    return {};
+  __name: "MyRelation",
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return {};
+    };
   }
 };
-function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return {};
-}
-const Component$1 = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main$1, [["render", _sfc_render$1]]);
 const _sfc_main = {
   name: "MySpace",
   data() {
@@ -56,16 +62,16 @@ const myTabs = [
   {
     name: "动态",
     key: "life",
-    component: Component$2
+    component: Component$1
   },
   {
     name: "关系",
     key: "relation",
-    component: Component$1
+    component: _sfc_main$1
   }
 ];
 exports.Component = Component;
-exports.Component$1 = Component$2;
-exports.Component$2 = Component$1;
+exports.Component$1 = Component$1;
+exports._sfc_main = _sfc_main$1;
 exports.myTabs = myTabs;
 //# sourceMappingURL=../../.sourcemap/mp-weixin/data/my.js.map

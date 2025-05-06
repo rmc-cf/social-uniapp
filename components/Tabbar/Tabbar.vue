@@ -1,10 +1,10 @@
 <template>
 	<view class="tarbar-container" :style="`bottom:${statusHeight}rpx;`">
-		<view @click="goTo(item.url)" class="item"  v-for="(item,index) in list" :key="index">
+		<view @click="goTo(item.url,'redirect')" class="item"  v-for="(item,index) in list" :key="index">
 			<uni-icons :size="24" :type="isCurrentPage(item.url)?item.activeIcon:item.icon" size="30"></uni-icons>
 			<view class="title">{{item.title}}</view>
 		</view>
-		<view @click="goTo('/pages/my/my')" class="item">
+		<view @click="goTo('/pages/my/my','redirect')" class="item">
 			<image src="/static/logo.png" class="my-icon"/>
 			<view class="title">我的</view>
 		</view>

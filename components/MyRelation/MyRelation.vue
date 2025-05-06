@@ -1,20 +1,14 @@
 <template>
 	<view>
-		我的关系
+		<RelationItem></RelationItem>
 	</view>
 </template>
 
-<script>
-	export default {
-		name:"MyRelation",
-		data() {
-			return {
-				
-			};
-		}
-	}
+<script setup>
+import { ref } from 'vue';
+
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

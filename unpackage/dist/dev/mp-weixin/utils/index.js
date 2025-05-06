@@ -7,12 +7,21 @@ const isCurrentPage = (pagePath) => {
   const currentPage = pages[pages.length - 1];
   return `/${currentPage.route}` === pagePath;
 };
-const goTo = (url) => {
+const goTo = (url, t = "redirect") => {
   if (isCurrentPage(url))
     return;
-  common_vendor.index.navigateTo({
-    url
-  });
+  switch (t) {
+    case "navigate":
+      common_vendor.index.navigateTo({
+        url
+      });
+      break;
+    case "redirect":
+      common_vendor.index.redirectTo({
+        url
+      });
+      break;
+  }
 };
 const goBack = () => {
   common_vendor.index.navigateBack();

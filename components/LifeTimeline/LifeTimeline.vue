@@ -58,7 +58,7 @@
 					display: flex;
 					flex-direction: column;
 					align-items: center;
-
+					min-width: 70rpx;
 					.date {
 						font-size: 60rpx;
 					}

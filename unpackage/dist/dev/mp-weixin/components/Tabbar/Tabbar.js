@@ -44,12 +44,12 @@ const _sfc_main = {
               size: "30"
             }),
             c: common_vendor.t(item.title),
-            d: common_vendor.o(($event) => common_vendor.unref(utils_index.goTo)(item.url), index),
+            d: common_vendor.o(($event) => common_vendor.unref(utils_index.goTo)(item.url, "redirect"), index),
             e: index
           };
         }),
         b: common_assets._imports_0$4,
-        c: common_vendor.o(($event) => common_vendor.unref(utils_index.goTo)("/pages/my/my")),
+        c: common_vendor.o(($event) => common_vendor.unref(utils_index.goTo)("/pages/my/my", "redirect")),
         d: common_vendor.s(`bottom:${common_vendor.unref(utils_index.statusHeight)}rpx;`)
       };
     };
