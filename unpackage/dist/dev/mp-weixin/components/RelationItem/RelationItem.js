@@ -19,6 +19,7 @@ const _sfc_main = {
         b: item.value
       }, item.value ? {} : {
         c: common_vendor.p({
+          size: "26",
           type: "gift-filled"
         })
       }, {

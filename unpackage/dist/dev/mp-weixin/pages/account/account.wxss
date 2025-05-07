@@ -4,8 +4,14 @@
   --padding-x: 20rpx;
   --tab-height: 90rpx;
 }
+.help.data-v-8cce343a {
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+  color: #d0d0d0;
+}
 .account-container.data-v-8cce343a {
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: orangered;
   padding: 120rpx 50rpx;
   display: flex;
@@ -47,7 +53,7 @@
 .account-container .btns .one-btn.data-v-8cce343a {
   width: 100%;
   color: #fff;
-  border-radius: 20rpx;
+  border-radius: 40rpx;
 }
 .account-container .btns .one-btn.data-v-8cce343a {
   border: 4rpx solid transparent;
@@ -56,4 +62,10 @@
 .account-container .btns .other-number-btn.data-v-8cce343a {
   border: 4rpx solid #fff;
   background: transparent;
+}
+.account-container .agreement.data-v-8cce343a {
+  margin-top: 30rpx;
+  display: flex;
+  gap: 5rpx;
+  text-align: center;
 }

@@ -9,7 +9,7 @@
 			<template v-if="item"></template>
 			<template v-else>
 				<div class="no-relation">
-					<uni-icons type="gift-filled"></uni-icons>
+					<uni-icons size="26" type="gift-filled"></uni-icons>
 				</div>
 				<view class="">虚位以待</view>
 			</template>
